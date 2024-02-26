@@ -2,11 +2,11 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+st.header('Aplicación generadora de gráficos')
+
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón para el histograma
 scatter_button = st.button('Construir gráfico de dispersión') # crear un botón para el gráfico de dispersión
-
-st.header('Aplicación generadora de gráficos')
 
 if hist_button: # al hacer clic en el botón de histograma
     # escribir un mensaje
